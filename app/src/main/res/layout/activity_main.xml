@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="16dp"
+    tools:context="com.matias.matias_finalquiz_115.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_famousquotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Famous Quotes"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_famousquotes"
+        android:layout_marginTop="10dp"
+        android:text="Author:"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_author"
+        android:backgroundTint="@android:color/background_light"
+        android:textColor="@android:color/background_light"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/tv_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_author"
+        android:text="Quote:"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_quote"
+        android:backgroundTint="@android:color/background_light"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/background_light"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_quote"
+        android:background="@color/colorPrimary"
+        android:onClick="saveQuote"
+        android:text="Save"
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_quote"
+        android:layout_toRightOf="@id/btn_save"
+        android:background="@color/colorPrimary"
+        android:onClick="subActivity"
+        android:text="Next"
+        android:textColor="@android:color/background_light"
+        android:layout_marginLeft="5dp"/>
+
+</RelativeLayout>

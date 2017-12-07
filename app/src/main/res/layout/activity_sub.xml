@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorControlActivated"
+    android:padding="16dp"
+    tools:context="com.matias.matias_finalquiz_115.SubActivity">
+
+    <TextView
+        android:id="@+id/tv_quote_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_quote_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_quote_author"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/background_light"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_quote_content"
+        android:background="@color/colorPrimary"
+        android:onClick="prevActivity"
+        android:text="Back"
+        android:textColor="@android:color/background_light"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
